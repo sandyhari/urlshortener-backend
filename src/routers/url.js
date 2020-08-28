@@ -1,4 +1,4 @@
-require("../config/db");
+require('dotenv').config()
 const express = require("express");
 let ObjectId = require("mongoose").Types.ObjectId;
 
