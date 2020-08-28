@@ -1,0 +1,36 @@
+#############################
+# Testing URL - POST -->request.
+#############################
+# POST http://localhost:8000/api/url/shorten
+# Content-Type: application/json
+
+# {
+#     "longUrl":"https://www.amazon.com/TP-Link-AC1750-Smart-WiFi-Router/dp/B079JD7F7G/ref=sr_1_1?dchild=1&fst=as%3Aoff&pf_rd_i=16225007011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=74069509-93ef-4a3c-8dca-a9e3fa773a64&pf_rd_r=FR5DS8ANE8AR5H1M4Q6N&pf_rd_s=merchandised-search-4&pf_rd_t=101&qid=1487012920&rnid=16225007011&s=computers-intl-ship&sr=1-1"
+# }
+
+#############################
+# Testing Signup USEr - POST -->request.
+#############################
+
+# POST http://localhost:8000/user/signup
+# Content-Type: application/json
+
+# {
+#     "email":"test@gmail.com",
+#     "firstname":"test",
+#     "lastname":"bhai",
+#     "password":"testpass"
+
+# }
+
+#############################
+# Testing LOGIN USER - POST -->request.
+#############################
+
+POST http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+    "email":"test@gmail.com",
+    "password":"testpass"
+}
